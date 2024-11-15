@@ -272,7 +272,7 @@ select {
   background: #f9f8f8cc;
   cursor: pointer;
 }
-.active-list .multisig-icon-four {
+.active-list .multisig-icon-four, .multisig-icon-four.active-list {
   background: #dedede;
   width: 56px;
   height: 56px;
@@ -281,6 +281,8 @@ select {
   left: -4px;
   cursor: pointer;
 }
+
+
 .active-list::before {
   background-image: url(/images/shape.png);
   position: absolute;
@@ -296,6 +298,16 @@ select {
   z-index: -1;
 }
 
+
+.multisig-icon-four.active-list::before {
+  top: -10px;
+  width: 112px;
+  height: 104px;
+  background-repeat: no-repeat;
+  background-size: 130px;
+  transform: translate(-37px, 0px);
+  z-index: -1;
+}
 .securesing-tab-main-sec .securesing-tab.securesing-tab-active::before {
   display: block;
 }
@@ -387,8 +399,9 @@ footer.custom-footer {
   position: relative;
 }
 
+
 body.dark-mode {
-  background: #101318;
+  background: #000;
 }
 
 body.dark-mode .inner-header,
@@ -423,7 +436,12 @@ body.dark-mode .active-list::before {
 body.dark-mode select#cars {
   background-image: url(/images/Dropdown-gray-icon.png);
 }
-
+body.dark-mode .securesing-tab .multisig-icon-four {
+ background: #101318;
+}
+body.dark-mode .securesing-tab .multisig-icon-four img {
+  filter: invert(1);
+}
 .form-parent-inner input,
 .form-parent-inner select {
   border-radius: 4px;
