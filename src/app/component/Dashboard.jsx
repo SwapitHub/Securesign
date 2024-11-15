@@ -128,39 +128,7 @@ export const Dashboard = () => {
         </div>
       </section>
 
-      {/* <div classNameName="dashboard-main">
-        <div classNameName="dash-board-main">
-          <button onClick={() => onchangeTab("new_multisig")}>
-            New Multisig
-          </button>
-          <button onClick={() => onchangeTab("multisig_accounts")}>
-            Multisig Accounts
-          </button>
-          <button onClick={() => onchangeTab("Extrinsics")}>Extrinsics</button>
-          <button onClick={() => onchangeTab("address_book")}>
-            Address Book
-          </button>
-
-          <div classNameName="icons">
-            <button onClick={() => onchangeTab("new_multisig")}>
-              New Multisig
-            </button>
-            <button onClick={() => onchangeTab("multisig_accounts")}>
-              Multisig Accounts
-            </button>
-            <button onClick={() => onchangeTab("Extrinsics")}>
-              Extrinsics
-            </button>
-            <button onClick={() => onchangeTab("address_book")}>
-              Address Book
-            </button>
-          </div>
-        </div>
-
-        <div>
-          <RenderActiveComponent />
-        </div>
-      </div> */}
+      
     </>
   );
 };
