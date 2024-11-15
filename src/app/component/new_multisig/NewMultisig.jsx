@@ -2,6 +2,6 @@
 
 export const NewMultisig = () => {
   return (
-   <>fffff</>
+   <><h1>NewMultisig demo</h1></>
   );
 };

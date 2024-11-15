@@ -2,6 +2,8 @@ import React from 'react'
 
 export const MultisigAccounts = () => {
   return (
-    <div>MultisigAccounts</div>
+    <div>
+      <h1>MultisigAccounts demo</h1>
+    </div>
   )
 }

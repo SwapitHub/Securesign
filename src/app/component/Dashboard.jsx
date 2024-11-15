@@ -40,7 +40,11 @@ export const Dashboard = () => {
                     <li>
                       <Link
                         href="#"
-                        className={`securesing-tab-a ${activeTab=="new_multisig" ? "securesing-active-a" : ""}`}
+                        className={`securesing-tab-a ${
+                          activeTab == "new_multisig"
+                            ? "securesing-active-a"
+                            : ""
+                        }`}
                         data-id="securesing-tab1"
                         onClick={() => onchangeTab("new_multisig")}
                       >
@@ -50,7 +54,11 @@ export const Dashboard = () => {
                     <li>
                       <Link
                         href="#"
-                        className={`securesing-tab-a ${activeTab=="multisig_accounts" ? "securesing-active-a" : ""}`}
+                        className={`securesing-tab-a ${
+                          activeTab == "multisig_accounts"
+                            ? "securesing-active-a"
+                            : ""
+                        }`}
                         data-id="securesing-tab2"
                         onClick={() => onchangeTab("multisig_accounts")}
                       >
@@ -60,7 +68,9 @@ export const Dashboard = () => {
                     <li>
                       <Link
                         href="#"
-                        className={`securesing-tab-a ${activeTab=="Extrinsics" ? "securesing-active-a" : ""}`}
+                        className={`securesing-tab-a ${
+                          activeTab == "Extrinsics" ? "securesing-active-a" : ""
+                        }`}
                         data-id="securesing-tab3"
                         onClick={() => onchangeTab("Extrinsics")}
                       >
@@ -70,7 +80,11 @@ export const Dashboard = () => {
                     <li>
                       <Link
                         href="#"
-                        className={`securesing-tab-a ${activeTab=="address_book" ? "securesing-active-a" : ""}`}
+                        className={`securesing-tab-a ${
+                          activeTab == "address_book"
+                            ? "securesing-active-a"
+                            : ""
+                        }`}
                         data-id="securesing-tab4"
                         onClick={() => onchangeTab("address_book")}
                       >
@@ -84,7 +98,12 @@ export const Dashboard = () => {
                     className="securesing-tab tab-active"
                     data-id="securesing-tab1"
                   >
-                    <div className={`multisig-icon-four ${activeTab=="new_multisig" ? "active-list" : ""}`}  onClick={() => onchangeTab("new_multisig")}>
+                    <div
+                      className={`multisig-icon-four ${
+                        activeTab == "new_multisig" ? "active-list" : ""
+                      }`}
+                      onClick={() => onchangeTab("new_multisig")}
+                    >
                       <img
                         src="/images/multisigicon1.png"
                         alt="multisig-icon"
@@ -92,8 +111,16 @@ export const Dashboard = () => {
                     </div>
                   </div>
 
-                  <div className={`securesing-tab ${activeTab=="multisig_accounts" ? "active-list" : ""}`} data-id="securesing-tab2" >
-                    <div className="multisig-icon-four" onClick={() => onchangeTab("multisig_accounts")}>
+                  <div
+                    className={`securesing-tab ${
+                      activeTab == "multisig_accounts" ? "active-list" : ""
+                    }`}
+                    data-id="securesing-tab2"
+                  >
+                    <div
+                      className="multisig-icon-four"
+                      onClick={() => onchangeTab("multisig_accounts")}
+                    >
                       <img
                         src="/images/multisigicon2.png"
                         alt="multisig-icon"
@@ -101,18 +128,31 @@ export const Dashboard = () => {
                     </div>
                   </div>
                   <div
-                    className={`securesing-tab ${activeTab=="Extrinsics" ? "active-list" : ""}`}
+                    className={`securesing-tab ${
+                      activeTab == "Extrinsics" ? "active-list" : ""
+                    }`}
                     data-id="securesing-tab3"
                   >
-                    <div className="multisig-icon-four" onClick={() => onchangeTab("Extrinsics")}>
+                    <div
+                      className="multisig-icon-four"
+                      onClick={() => onchangeTab("Extrinsics")}
+                    >
                       <img
                         src="/images/multisigicon3.png"
                         alt="multisig-icon"
                       />
                     </div>
                   </div>
-                  <div className={`securesing-tab ${activeTab=="address_book" ? "active-list" : ""}`} data-id="securesing-tab4">
-                    <div className="multisig-icon-four" onClick={() => onchangeTab("address_book")}>
+                  <div
+                    className={`securesing-tab ${
+                      activeTab == "address_book" ? "active-list" : ""
+                    }`}
+                    data-id="securesing-tab4"
+                  >
+                    <div
+                      className="multisig-icon-four"
+                      onClick={() => onchangeTab("address_book")}
+                    >
                       <img
                         src="/images/multisigicon4.png"
                         alt="multisig-icon"
@@ -127,8 +167,6 @@ export const Dashboard = () => {
           </div>
         </div>
       </section>
-
-      
     </>
   );
 };
