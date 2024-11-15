@@ -93,6 +93,7 @@ header {
 .securesing-tab-menu ul li {
   list-style-type: none;
   display: block;
+  cursor: pointer;
 }
 
 .securesing-tab-menu ul li a {
@@ -269,6 +270,7 @@ select {
   justify-content: center;
   display: flex;
   background: #f9f8f8cc;
+  cursor: pointer;
 }
 .active-list .multisig-icon-four {
   background: #dedede;
